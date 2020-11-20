@@ -1,8 +1,13 @@
 const secret = 'Say aloe to my little frined'
 
-const port = 8000
+const port = process.env.PORT || 8000
+
+const env = process.env.NODE_ENV || 'development'
+
+const dbURI = env === 'production'
+  ? process.env.MONGODB_URI
+  : `mongodb://localhost/pokedb-${env}`
 
 module.exports = {
-  port,
-  secret
+  secret, port, dbURI
 }

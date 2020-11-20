@@ -5,6 +5,8 @@ require('dotenv').config()
 const bodyParser = require('body-parser')
 const Router = require('./router')
 const mongoose = require('mongoose')
+const path = require('path')
+const dist = path.join(__dirname, 'dist')
 
 
 mongoose.connect(
@@ -38,6 +40,12 @@ expressServer.use(bodyParser.json())
 
 // Adding /api as a common route, so that all requests start with /api
 expressServer.use('/api', Router)
+
+expressServer.use('/', express.static(dist))
+
+expressServer.get('*', function(req, res) {
+  res.sendFile(path.join(dist, 'index.html'))
+})
 
 // We can give it whichever port we like, but it must be unique!
 expressServer.listen(port)
