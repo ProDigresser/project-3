@@ -16,6 +16,7 @@ import search from '../images/magnifying.svg'
 import map from '../images/map.svg'
 import gram from '../images/leaves.svg'
 import board from '../images/pinboard.svg'
+import edit from './images/edit.svg'
 
 // ! This is the landing page
 // * Hero/background
@@ -126,7 +127,7 @@ const Home = () => {
             <h6>Messages</h6>
           </div>
           <div><Link to={{ pathname: `/user-page/${user._id}/settings`, state: { user } }}>
-            <img src="./images/edit.svg" alt="edit-icon" />
+            <img src={edit} alt="edit-icon" />
           </Link>
           </div>
         </div>
