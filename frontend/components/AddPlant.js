@@ -1,20 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-// import { Link } from 'react-router-dom'
-
-// * Common name
-// * Scientific name 
-// * Image 
-// * Dui Decimal
-// * Synonyms 
-// * Add button 
-// * Share button 
-// * Wish button
-// ? Add User Details
-
-// ? Form to add User details before POSTING to list
-
-// ! STILL TO ADD - WISH LIST ICON
+import book from '../images/book.svg'
+import share from '../images/share.svg'
+import deerWhite from '../images/deer-white.svg'
+import fireplace from '../images/fireplace-green.svg'
+import deerGreen from '../images/fireplace-green.svg'
+import fireplaceWhite from '../images/fireplace-green.svg'
 
 const AddPlant = (props) => {
   const plantData = props.location.state.plant
@@ -93,11 +84,11 @@ const AddPlant = (props) => {
           {/* Making left section and right edit icon align center */}
           <div className="header-icon">
             {/* Making 'Messages' and the icon align center */}
-            <img src="../images/book.svg" alt="message-icon" />
+            <img src={book} alt="message-icon" />
             <h6>{plantData.bibliography}</h6>
           </div>
           <div>
-            <img src="../images/share.svg" alt="edit-icon" />
+            <img src={share} alt="edit-icon" />
           </div>
         </div>
 
@@ -118,14 +109,14 @@ const AddPlant = (props) => {
                   className="button-radio active"
                   value={true}
                   name="outdoor">
-                  <img src="../images/deer-white.svg" alt="deer" />Outdoor</button>
+                  <img src={deerWhite} alt="deer" />Outdoor</button>
                 <button
                   id="button-radio-grow"
                   className="button-radio "
                   onClick={handleRadioButton}
                   value={false}
                   name="outdoor">
-                  <img src="../images/fireplace-green.svg" alt="fireplace" />
+                  <img src={fireplace} alt="fireplace" />
               Indoor</button>
               </div>
               :
@@ -136,13 +127,13 @@ const AddPlant = (props) => {
                   onClick={handleRadioButton}
                   value={true}
                   name="outdoor">
-                  <img src="../images/deer-green.svg" alt="deer" />Outdoor</button>
+                  <img src={deerGreen} alt="deer" />Outdoor</button>
                 <button
                   id="button-radio-grow"
                   className="button-radio active"
                   value={false}
                   name="outdoor">
-                  <img src="../images/fireplace-white.svg" alt="fireplace" />
+                  <img src={fireplaceWhite} alt="fireplace" />
               Indoor</button>
               </div>
             }

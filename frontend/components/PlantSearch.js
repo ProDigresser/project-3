@@ -51,7 +51,7 @@ const PlantSearch = () => {
       <section className="content fade-in" id="content-search">
         <div className="fade"></div>
         <section className="margin">
-          {results.map((plant, index) => {
+          {results && results.map((plant, index) => {
             return <Link key={index}
               to={{ pathname: `/add-plant/${plant.id}`, state: { plant } }} >
               <div style={{ backgroundImage: `linear-gradient(rgba(129, 150, 103, 0.9), rgba(129, 150, 103, 0.9)), url(${plant.image_url})` }}

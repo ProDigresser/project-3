@@ -2,14 +2,6 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import navProfile from '../images/nav-profile.svg'
 
-// ! This is the social feed
-// * List of all posts in time order 
-// * Image with caption 
-// * Button to like
-// * Button to comment
-// * If you click on their profile image it will take you to their profile
-
-
 const Fernstagram = () => {
 
   const [feedData, updateFeedData] = useState([])

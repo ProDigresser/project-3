@@ -4,20 +4,16 @@ import { Link } from 'react-router-dom'
 import { isCreator } from '../lib/auth'
 import navProfile from '../images/nav-profile.svg'
 
-// ! User Page
-// * Name 
-// * Image
-// * Badges 
-// * Status 
-// * Plant count 
-// * User bio 
-// * Contact button 
-// * List of the users plants 
-
-// ? Ability to see users plants and posts
-// ? Link to add more plants
-// ? Link to see messages
-
+import messages from '../images/messages.svg'
+import edit from '../images/edit.svg'
+import badge from '../images/badge.svg'
+import verticalline from '../images/vertical-line.svg'
+import plantpot from '../images/plantpot.svg'
+import compass from '../images/compass.svg'
+import flowerWhite from '../images/round-flower-white.svg'
+import cameraGreen from '../images/camera-green.svg'
+import flowerGreen from '../images/round-flower-green.svg'
+import cameraWhite from '../images/camera-white.svg'
 
 const UserPage = (props) => {
   const [user, updateUser] = useState({})
@@ -63,34 +59,34 @@ const UserPage = (props) => {
           {/* Making left section and right edit icon align center */}
           <div className="header-icon">
             {/* Making 'Messages' and the icon align center */}
-            <img src="../images/messages.svg" alt="message-icon" />
+            <img src={messages} alt="message-icon" />
             <h6>Messages</h6>
           </div>
-          <div><Link to={{ pathname: `/user-page/${user._id}/settings`, state: { user } }}><img src="../images/edit.svg" alt="edit-icon" /></Link>
+          <div><Link to={{ pathname: `/user-page/${user._id}/settings`, state: { user } }}><img src={edit} alt="edit-icon" /></Link>
           </div>
         </div>
 
         <section className="status">
           <div>
-            <img src="../images/badge.svg" alt="badge-icon" />
+            <img src={badge} alt="badge-icon" />
             <h5>Support<br />Badge</h5>
           </div>
-          <img src="../images/vertical-line.svg" alt="vertical-line" />
+          <img src={verticalline} alt="vertical-line" />
 
           {user.sitter ?
             <div>
-              <img src="../images/plantpot.svg" alt="flower-in-pot" />
+              <img src={plantpot} alt="flower-in-pot" />
               <h5>PLANT<br />SITTER</h5>
             </div>
             :
             <div>
-              <img src="../images/compass.svg" alt="compass" />
+              <img src={compass} alt="compass" />
               <h5>PLANT<br />OWNER</h5>
             </div>
           }
 
 
-          <img src="../images/vertical-line.svg" alt="vertical-line" />
+          <img src={verticalline} alt="vertical-line" />
           <div>
             <h1>{userPlants.length}</h1>
             <h5>Plant<br />Count</h5>
@@ -117,16 +113,16 @@ const UserPage = (props) => {
                 <button
                   id="button-radio-grow"
                   className="button-radio active">
-                  <img src="../images/round-flower-white.svg" alt="flower"></img>
+                  <img src={flowerWhite} alt="flower"></img>
                   Plants
-                  </button>
+                </button>
                 <button
                   id="button-radio-grow"
                   className="button-radio"
                   onClick={handleRadioButton}>
-                  <img src="../images/camera-green.svg" alt="camera"></img>
+                  <img src={cameraGreen} alt="camera"></img>
                   Posts
-                  </button>
+                </button>
               </div>
               {isCreator(user._id) && <Link to={'/plant-search'}>
                 <div className="button-green button-addPlant">Add New plant</div>
@@ -150,20 +146,20 @@ const UserPage = (props) => {
                   id="button-radio-grow"
                   className="button-radio"
                   onClick={handleRadioButton}>
-                  <img src="../images/round-flower-green.svg" alt="flower"></img>
+                  <img src={flowerGreen} alt="flower"></img>
                   Plants
-                  </button>
+                </button>
                 <button
                   id="button-radio-grow"
                   className="button-radio active">
-                  <img src="../images/camera-white.svg" alt="camera"></img>
+                  <img src={cameraWhite} alt="camera"></img>
                   Posts
-                  </button>
+                </button>
               </div>
               {isCreator(user._id) && <Link to={'/fernstagram'}>
                 <div className="button-green button-addPlant">Fernstagram</div>
               </Link>}
-              {posts.map((post, index) => {
+              {posts.map(post => {
                 var timestamp = new Date(post.createdAt)
                 var datetime = timestamp.getDate() + '/'
                   + (timestamp.getMonth() + 1) + '/'
