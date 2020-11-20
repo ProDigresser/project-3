@@ -18,14 +18,6 @@ import gram from '../images/leaves.svg'
 import board from '../images/pinboard.svg'
 import edit from '../images/edit.svg'
 
-// ! This is the landing page
-// * Hero/background
-// * Login/Register buttons
-// * About Us
-
-// ? Limited functionality if you're not logged in
-
-
 
 const Home = () => {
 
