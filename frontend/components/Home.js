@@ -16,7 +16,7 @@ import search from '../images/magnifying.svg'
 import map from '../images/map.svg'
 import gram from '../images/leaves.svg'
 import board from '../images/pinboard.svg'
-import edit from './images/edit.svg'
+import edit from '../images/edit.svg'
 
 // ! This is the landing page
 // * Hero/background
