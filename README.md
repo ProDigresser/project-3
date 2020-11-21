@@ -373,7 +373,8 @@ And here is the JSX for mapping the response data:
   })}
 
 ```
-Here is an example of another API used, [Mapbox](https://www.mapbox.com/): 
+Here is an example of combining two external APIs using [Postcode.io](https://postcodes.io/) and [Mapbox](https://www.mapbox.com/): 
+Here we are pulling the coordinates of a User from their porvided Postcode- 
 ```javascript
 const [userData, updateUserData] = useState([])
 const [longLat, updateLongLat] = useState([])
@@ -406,6 +407,45 @@ useEffect(() => {
       })
     })
 }, [])
+```
+And here is mapbox being renderd on the page as a component with markers:
+```javascript
+<MapGL {...viewPort}
+  mapboxApiAccessToken={'pk.eyJ1IjoicmFjaGVsYmVhbGUiLCJhIjoiY2tobmIyMGNnMDAxcTJ0cGVodGpxMDdjaCJ9.jIEvNHrY6OQ45Q05K2SO_w'}
+  mapStyle="mapbox://styles/rachelbeale/ckhoxbpuf299a19mmtb9arg8a"
+  onViewportChange={(viewPort) => setViewPort(viewPort)}>
+  {longLat.map(user => {
+    return <Marker
+      key={user.user}
+      latitude={user.lat}
+      longitude={user.long}>
+      {user.sitter === true ?
+      <button className="markerSitter"
+        onClick={event => {
+          event.preventDefault()
+          updatePopupInfo(user)
+      }}></button>
+      :
+      <button className="markerOwner"
+      onClick={event => {
+        event.preventDefault()
+        updatePopupInfo(user)
+      }}></button>}
+    </Marker>
+  })}
+  {popupInfo ? <Popup
+    latitude={popupInfo.lat}
+    longitude={popupInfo.long}
+    onClose={() => {
+      updatePopupInfo(null)
+    }}>
+    <Link to={`/user-page/${popupInfo.user}`}>
+      <h2>{popupInfo.name}</h2>
+      <p>{popupInfo.bio}</p>
+    </Link>
+  </Popup>
+  : null}
+</MapGL >
 ```
 
 Here we have an example of image uploading using [Cloudinary](https://cloudinary.com/) and it's upload widget:
