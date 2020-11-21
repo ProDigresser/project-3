@@ -22,6 +22,7 @@ router.route('/plants/:id')
   .delete(secureRoute, dataController.deletePlants)
   .put(secureRoute, dataController.editPlants)
 
+//  Get Plants By User
 router.route('/users-plants/:userid')
   .get(dataController.getPlantsByUser)
 

@@ -10,8 +10,6 @@ const dist = path.join(__dirname, 'dist')
 
 
 mongoose.connect(
-
-  //! Complete DB location 
   dbURI,
 
   // This will remove warnings that we don't need. We don't really need
@@ -23,9 +21,6 @@ mongoose.connect(
     else console.log('Mongoose connected successfully!')
   }
 )
-
-// For environment variables
-console.log(process.env.hello)
 
 // Logging
 expressServer.use((req, res, next) => {
