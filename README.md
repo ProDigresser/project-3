@@ -58,15 +58,14 @@ Find it here! --> [🌺](https://prodigresser-seeded.herokuapp.com/)
 
 ## The App
 
-In order to work as a team and develop coherently - we took time looking at the different faucets that we thought were key to this app, and worked though the development process methodically. These were the steps we identified -
+In order to work as a team and develop coherently - we took time looking at the different faucets that we thought were key to this app, and worked though the development process methodically. These were the steps we identified-
 
 1. Develop an understanding of what our user story would look like
 2. Formulate a backend structure of key endpoints and potential APIs
 3. Develop the core backend features as a group and get a clear understanding of the backend structure before diving in further
 4. Gather the external APIs we would be using and initiate them on the back end 
 5. Attach the backend endpoints to the front end using React
-6. Form a style guide - including a wireframe, colour pallette and logo
-7. Stretch goals 
+6. Form a style guide - including a wireframe, colour pallette and logo 
 
 ### The User Stroy and Backend Framework
 
@@ -473,7 +472,7 @@ In the end we put together and launched an app that I am vary proud of. It is fe
 
 It was an interesting challenge working in a group, each of us coming together and sharing each others strengths and covering each other weaknesses. It was also helpful to troubleshoot with people who were familiar with the project. It has also been a huge learning experience to build a back end and to design an API from scratch.
 
-Finally - there were some pieces that we did not get to finish. This included implementing nested comments on the social media platform and the endpoints that came with it.
+Finally - there were some pieces that we did not get to finish. This included implementing nested comments on the social media platform and the endpoints that came with it. Going foward, I would also like to take more care for the mobile intergration and usability - which I believe is not quite complete.
 
 You can check the site out [here](https://prodigresser-seeded.herokuapp.com/).
 
