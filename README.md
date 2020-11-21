@@ -3,7 +3,7 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) 
 # MERN Full Stack Application - Seeded, A Plant Baby Sitting App For Ferns In Your Area!
 ### By  [Laurence](https://github.com/ProDigresser) and Co-Contributors- [Rebecca](https://github.com/rebeccaacioadea), [Enrico](https://github.com/bacxhus) & [Rachel](https://github.com/rachel-beale)
-		    			  ░░              ░░                  
+		    				░░              ░░                  
 					      ▒▒              ▒▒                  
 					    ▒▒░░▒▒          ▒▒  ▒▒                
 					    ▒▒░░░░▒▒      ▒▒░░  ▒▒                
@@ -186,6 +186,7 @@ userSchema
 
 ### The Backend
 A clean, consistent, and RESTful structure was key to developing this app - using a clear separation of the function of each component.
+
 ![](README-files/file-structure.png)
 
 We started by developing the backend together, starting with server.js, router.js, the middleware and models for the database. 
@@ -298,6 +299,7 @@ Next is the front end - we started with a common development framework for react
 4. Store components separately ^
 
 Shown here - a well defined file structure:
+
 ![](README-files/front-end-file-structure.png)
 
 The key to this application was to attach the APIs to the front end, and to make it easy to pass information between the two. To do this we used React hooks, UseState and UseEffect along with tools like Axios.
@@ -518,4 +520,4 @@ You can check the site out [here](https://prodigresser-seeded.herokuapp.com/).
 
 Thanks for visiting, and remember to water your plants!
 
-![](README-files/home.png)
+[README-files/home.png](https://prodigresser-seeded.herokuapp.com/)
