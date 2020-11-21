@@ -1,6 +1,6 @@
 
 ### project-3
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) 
+# ![GALogo](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) 
 # MERN Full Stack Application - Seeded, A Plant Baby Sitting App For Ferns In Your Area!
 ### By  [Laurence](https://github.com/ProDigresser) and Co-Contributors- [Rebecca](https://github.com/rebeccaacioadea), [Enrico](https://github.com/bacxhus) & [Rachel](https://github.com/rachel-beale)
 		    				░░              ░░                  
@@ -502,11 +502,11 @@ function handleChange(e) {
 We considered coherent styling and themes to be super important to an enjoyable experience. We spent time considering the layout, color theme, logo design and layout. Much of this was done using [InVision](https://www.invisionapp.com/), with our colleague Enrico providing excellent design direction. 
 
 This is an example of colour schemes and logo design: 
-![](README-files/logo.png)
+![Logos](README-files/logo.png)
 
 And here we have an example of the wireframing in InVision:
 
-![](README-files/login.png)![](README-files/menu.png)![](README-files/profile.png)
+![Login](README-files/login.png)![Menu](README-files/menu.png)![Profile](README-files/profile.png)
 
 ## The Result!
 
@@ -520,4 +520,4 @@ You can check the site out [here](https://prodigresser-seeded.herokuapp.com/).
 
 Thanks for visiting, and remember to water your plants!
 
-[README-files/home.png](https://prodigresser-seeded.herokuapp.com/)
+![README-files/home.png](https://prodigresser-seeded.herokuapp.com/)
