@@ -520,4 +520,4 @@ You can check the site out [here](https://prodigresser-seeded.herokuapp.com/).
 
 Thanks for visiting, and remember to water your plants!
 
-![README-files/home.png](https://prodigresser-seeded.herokuapp.com/)
+[![Home](README-files/home.png)](https://prodigresser-seeded.herokuapp.com/)
