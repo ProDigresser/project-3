@@ -34,7 +34,7 @@ This task involved working together to develop a Full Stack application using ME
 
 After deliberation and discussion we decided to develop an app that allowed its users to sign up and help look after plants of fellow owners. We also concluded that we could use this base idea to build a feature rich app - pulling from external databases, responsive map integration, social media (with image uploading) and message boards.
 
-Find it here! --> [🌺](https://prodigresser-seeded.herokuapp.com/)
+Find it here! --> [Seeded App 🌺](https://prodigresser-seeded.herokuapp.com/)
 
 ### The Brief
 
