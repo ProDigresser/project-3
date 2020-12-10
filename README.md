@@ -1,7 +1,8 @@
-# ![GALogo](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) 
-# Project-3 - MERN Full Stack Application - Seeded, A Plant Baby Sitting App For Ferns In Your Area!
+# ![GALogo](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
 ### General Assembly Software Engineering Immersive
+
+# Project-3 - MERN Full Stack Application - Seeded, A Plant Baby Sitting App For Ferns In Your Area!
 
 ### By  [Laurence 🌵](https://github.com/ProDigresser) and Co-Contributors- [Rebecca 🌼](https://github.com/rebeccaacioadea), [Enrico 🌳](https://github.com/bacxhus) & [Rachel 🌷](https://github.com/rachel-beale).
 		    				░░              ░░                  
