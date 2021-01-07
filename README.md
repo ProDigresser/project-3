@@ -378,7 +378,7 @@ And here is the JSX for mapping the response data:
 
 ```
 Here is an example of combining two external APIs using [Postcode.io](https://postcodes.io/) and [Mapbox](https://www.mapbox.com/): 
-Here we are pulling the coordinates of a User from their porvided Postcode- 
+Here we are pulling the coordinates of a User from their provided Postcode- 
 ```javascript
 const [userData, updateUserData] = useState([])
 const [longLat, updateLongLat] = useState([])
@@ -412,7 +412,7 @@ useEffect(() => {
     })
 }, [])
 ```
-And here is mapbox being renderd on the page as a component with markers:
+And here is mapbox being rendered on the page as a component with markers:
 ```javascript
 <MapGL {...viewPort}
   mapboxApiAccessToken={'pk.eyJ1IjoicmFjaGVsYmVhbGUiLCJhIjoiY2tobmIyMGNnMDAxcTJ0cGVodGpxMDdjaCJ9.jIEvNHrY6OQ45Q05K2SO_w'}
@@ -516,7 +516,13 @@ In the end we put together and launched an app that I am vary proud of. It is fe
 
 It was an interesting challenge working in a group, each of us coming together and sharing each others strengths and covering each other weaknesses. It was also helpful to troubleshoot with people who were familiar with the project. It has also been a huge learning experience to build a back end and to design an API from scratch.
 
-Finally - there were some pieces that we did not get to finish. This included implementing nested comments on the social media platform and the endpoints that came with it. Going foward, I would also like to take more care for the mobile intergration and usability - which I believe is not quite complete.
+Finally - there were some pieces that we did not get to finish. This included implementing nested comments on the social media platform and the endpoints that came with it. Going forward, I would also like to take more care for the mobile integration and usability - which I believe is not quite complete.
+
+Future improvements - 
+- Complete 'Badge' functionality
+- Style the social media elements more thoughtfully 
+- Implement nested comments
+- Style for a better touch and mobile experience
 
 You can check the site out [here](https://prodigresser-seeded.herokuapp.com/).
 
