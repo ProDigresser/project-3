@@ -60,7 +60,7 @@ Find it here! --> [Seeded App 🌺](https://prodigresser-seeded.herokuapp.com/)
 
 ## The App
 
-In order to work as a team and develop coherently - we took time looking at the different faucets that we thought were key to this app, and worked though the development process methodically. These were the steps we identified-
+In order to work as a team and develop coherently - we took time looking at the different facets that we thought were key to this app, and worked though the development process methodically. These were the steps we identified-
 
 1. Develop an understanding of what our user story would look like
 2. Formulate a backend structure of key endpoints and potential APIs
