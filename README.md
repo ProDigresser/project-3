@@ -508,17 +508,27 @@ This is an example of colour schemes and logo design:
 
 And here we have an example of the wireframing in InVision:
 
-![Login](README-files/login.png)![Menu](README-files/menu.png)![Profile](README-files/profile.png)
+<img alt='Login' src='README-files/login.png' height='500px'>
+<img alt='Menu' src='README-files/menu.png' height='500px'>
+<img alt='Profile' src='README-files/profile.png' height='500px'>
 
 ## The Result!
 
 In the end we put together and launched an app that I am vary proud of. It is feature rich and looks amazing and is easy to use.
 
+### Key Learning Points
+
 It was an interesting challenge working in a group, each of us coming together and sharing each others strengths and covering each other weaknesses. It was also helpful to troubleshoot with people who were familiar with the project. It has also been a huge learning experience to build a back end and to design an API from scratch.
+Personally I found myself learning a few key lessons - 
 
-Finally - there were some pieces that we did not get to finish. This included implementing nested comments on the social media platform and the endpoints that came with it. Going forward, I would also like to take more care for the mobile integration and usability - which I believe is not quite complete.
+- Before developing a feature, take time to realise the scope of the task
+- Similarly, a robust backend and endpoints are important - but try not to over-engineer 
+- Patience when troubleshooting issues (especially during launch!)
 
-Future improvements - 
+### Future Improvements
+
+Finally - there were some pieces that we did not get to finish. This included implementing nested comments on the social media platform and the endpoints that came with it. Going forward, I would also like to take more care for the mobile integration and usability - which I believe is not quite complete - 
+
 - Complete 'Badge' functionality
 - Style the social media elements more thoughtfully 
 - Implement nested comments
