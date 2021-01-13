@@ -508,9 +508,9 @@ This is an example of colour schemes and logo design:
 
 And here we have an example of the wireframing in InVision:
 
-<img alt='Login' src='README-files/login.png' height='500px'>
-<img alt='Menu' src='README-files/menu.png' height='500px'>
-<img alt='Profile' src='README-files/profile.png' height='500px'>
+<img style='display: inline;' alt='Login' src='README-files/login.png' height='500px'>
+<img style='display: inline;' alt='Menu' src='README-files/menu.png' height='500px'>
+<img style='display: inline;' alt='Profile' src='README-files/profile.png' height='500px'>
 
 ## The Result!
 
