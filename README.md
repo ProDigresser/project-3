@@ -519,7 +519,7 @@ In the end we put together and launched an app that I am vary proud of. It is fe
 ### Key Learning Points
 
 It was an interesting challenge working in a group, each of us coming together and sharing each others strengths and covering each other weaknesses. It was also helpful to troubleshoot with people who were familiar with the project. It has also been a huge learning experience to build a back end and to design an API from scratch.
-Personally I found myself learning a few key lessons - 
+Personally, I found myself learning a few key lessons - 
 
 - Before developing a feature, take time to realise the scope of the task
 - Similarly, a robust backend and endpoints are important - but try not to over-engineer 
